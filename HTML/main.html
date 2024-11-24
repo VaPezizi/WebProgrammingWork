@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!-- Uusi kommentti -->
+<html>
+    <head>
+        <title>Harjoitus Työ</title>
+        <link rel="stylesheet" href="../CSS/style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <script src="../JavaScript/main.js"></script>
+        
+    </head>
+	<body>
+        <div class="header">
+            <h1>Tervetuloa!</h1>
+            <b><p class="note">Hyödyllisiä muuntimia</p></b>
+        </div>
+        <div class="navbar">
+            <a>Yksikkömuunnokset</a>
+            <a href="sivu2.html">Binääri, Desimaali muunnokset</a>
+            <a href="sivu3.html">Hex, Desimaali muunnokset</a>
+        </div>
+        
+        <div id="keskus" class="row">
+            <div class="main">
+                <h2>Yksikkömuunnokset</h2>
+                    <p>Tällä muuntimella voit muuntaa yksiköitä Tera - Piko välillä</p>
+                <label for="vastaus1">Muunnettava numero:</label>
+			        <input type="number" id="numero" name="numero"
+				    min="1" value="0">
+                
+                    <select class="opts" id="fromUnit">
+                        <option value="Teraa">Tera</option>
+                        <option value="Gigaa">Giga</option>
+                        <option value="Megaa">Mega</option>
+                        <option value="Kiloa">Kilo</option>
+                        <option value="Hehtoa">Hehto</option>
+                        <option value="Dekaa">Deka</option>
+                        <option selected value="Perusmuotoa">Perusmuoto</option>
+                        <option value="Desiä">Desi</option>
+                        <option value="Senttiä">Sentti</option>
+                        <option value="Milliä">Milli</option>
+                        <option value="Mikroa">Mikro</option>
+                        <option value="Nanoa">Nano</option>
+                        <option value="Pikoa">Piko</option>
+                    </select>
+                <br><br>
+                <label for="vastaus2">Mihin muunnetaan: </label>
+                    <select class="opts" id="toUnit">
+                        <option value="Teraa">Tera</option>
+                        <option value="Gigaa">Giga</option>
+                        <option value="Megaa">Mega</option>
+                        <option value="Kiloa">Kilo</option>
+                        <option value="Hehtoa">Hehto</option>
+                        <option value="Dekaa">Deka</option>
+                        <option selected value="Perusmuotoa">Perusmuoto</option>
+                        <option value="Desiä">Desi</option>
+                        <option value="Senttiä">Sentti</option>
+                        <option value="Milliä">Milli</option>
+                        <option value="Mikroa">Mikro</option>
+                        <option value="Nanoa">Nano</option>
+                        <option value="Pikoa">Piko</option>
+                    </select>
+                <br>
+                <button onclick="convert()">Muunna</button>  
+                <!--
+			    Tähän div elementtiin tallennetaan muunnoksen tulos
+		        -->
+                <div id="tulos" class="tulos"></div>
+                <noscript>
+                    <p class="eiscript">Please enable JavaScript. This site doesn't work without it</p>
+                </noscript>
+                    
+            </div>
+          
+            <div class="side">
+                <h2>Yksiköt</h2>
+                <img src="../img/taulukko.png" alt="Taulukko" width="300" height="400">
+            </div>
+          </div>
+
+	</body>
+    <footer class="footer">
+        <p class="note">Samuli Pihlaja</p>
+        <p>SeAMK TITE23</p>
+        
+        
+    </footer> 
+	

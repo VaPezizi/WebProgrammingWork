@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!-- Uusi kommentti -->
+<html>
+    <head>
+        <title>Harjoitus Työ</title>
+        <link rel="stylesheet" href="../CSS/style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script src="../JavaScript/main.js"></script>
+        
+    </head>
+	<body>
+        <div class="header">
+            <h1>Tervetuloa!</h1>
+            <b><p class="note">Hyödyllisiä muuntimia</p></b>
+        </div>
+        <div class="navbar">
+            <a href="main.html">Yksikkömuunnokset</a>
+            <a>Binääri, Desimaali muunnokset</a>
+            <a href="sivu3.html">Hex, Desimaali muunnokset</a>
+        </div>
+        
+        <div class="row">
+            <div class="main">
+                <h2>Binääri ja Desimaali muunnokset</h2>
+                    <p>Näillä muuntimilla voit muuntaa yksiköitä Binäärin ja desimaali lukujen välillä</p>
+                <label for="vastaus1">Desimaali luku binääriksi:</label>
+			        <input type="number" id="numero" name="numero"
+				    min="1" value="0">
+                <button onclick="convertDB()">Muunna</button>  
+                <div id="tulos" class="tulos"></div>
+
+                <br>
+                <label for="vastaus2">Binääriluku desimaaliksi: </label>
+                    <input type="number" id="numero2" name="numero2"
+                    min="1" value="0">
+                <button onclick="convertBD()">Muunna</button>  
+                <!--
+			    Tähän div elementtiin tallennetaan muunnoksen tulos
+		        -->
+                <div id="tulos2" class="tulos"></div>
+                <noscript>
+                    <p class="eiscript">Please enable JavaScript. This site doesn't work without it</p>
+                </noscript>
+                <br>
+                <a href="https://fi.wikipedia.org/wiki/Bin%C3%A4%C3%A4rij%C3%A4rjestelm%C3%A4">Tietoa binäärijärjestelmästä</a>
+            </div>
+          
+            <div class="side">
+                <h2>Yksiköt</h2>
+                <img src="../img/taulukko2.png" alt="Taulukko" width="280" height="450">
+            </div>
+          </div>
+
+	</body>
+    <footer class="footer">
+        <p class="note">Samuli Pihlaja</p>
+        <p>SeAMK TITE23</p>
+        
+        
+    </footer> 
+	
